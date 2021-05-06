@@ -1,6 +1,7 @@
 ---
-layout: page
 title: About
+description: <pre>     Background     Classes     Certifications     Education     Resume     </pre>
+layout: default
 permalink: /about/
 ---
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+	<meta charset="UTF-8">
+	{% assign current = page.url | downcase | split: '/' %}
+	{% seo %}
+	<link rel="stylesheet" href="{{ '../assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#157878">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+  
+<body>
+	<div class="topnav">
+		<a href='/'          {% if current[1]== null      %} class='active' {% endif %}>Home</a>
+		<a href='/about/'    {% if current[1]=='about'    %} class='active' {% endif %}>About</a>
+		<a href='/updates/'  {% if current[1]=='updates'  %} class='active' {% endif %}>Updates</a>
+		<a href='/projects/' {% if current[1]=='projects' %} class='active' {% endif %}>Projects</a>
+	</div>
+
+	<header class="page-header" role="banner">
+		<h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+		<h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+		{% if page.url == "/" %}
+			<a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+			<p style="position: absolute; top: 9.75%; left: 80%;"><img src="images/Portrait.png" alt="Portrait of me" width="250" height="333"></p>
+		{% endif %}
+	</header>
+
+	<main id="content" class="main-content" role="main">
+		{{ content }}
+	</main>
+	
+	<div class="footer">
+		<div class="footer-content">
+			<a href="https://github.com/NicholsTyler"><img src="../images/GitHub.png" class="icon-style" alt="GitHub icon"></a>
+			<a href="https://www.linkedin.com/in/tyler-a-nichols/"><img src="../images/LinkedIn.png" class="icon-style" alt="LinkedIn icon"></a>
+			<a href="https://tempade.itch.io/"><img src="../images/ItchIO.png" class="icon-style" alt="itch.io icon"></a>
+			<a href="mailto:Nichols.TA@Outlook.com"><img src="../images/Email.png" class="icon-style" alt="Email icon"></a>
+		</div>
+	</div>
+</body>
+</html>

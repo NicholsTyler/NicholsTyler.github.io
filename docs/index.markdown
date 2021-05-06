@@ -1,6 +1,31 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
+
+<script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
+<script src="{{ site.baseurl }}/assets/js/fadein.js"></script>
+
+
+<div class="parallax">
+    <div class="text-parallax" style="text-align: left;">
+        <pre><h1>
+                                  Major 
+            <span style="color:#4ae69a; background-color:rgba(0,35,57,0.75);">Computer Science Engineering</span>
+        </h1></pre>
+    </div>
+    <div class="text-parallax" style="text-align: right;">
+        <pre><h1>
+         Minor                          
+            <span style="color:#4ae69a; background-color:rgba(0,35,57,0.75);">Game Design and Development</span>
+        </h1></pre>
+    </div>
+</div>
+
+<section>
+    <div class="text-block">
+        <h1>
+            Hello, my name is <span style="color:#4ae69a; background-color:rgba(0,35,57,0.25);">Tyler Nichols</span>,
+            and I'm a Senior at <span style="color:#4ae69a; background-color:rgba(0,35,57,0.25);">Michigan State University</span>
+        </h1>
+    </div>
+</section>
