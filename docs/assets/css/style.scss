@@ -4,6 +4,7 @@
 @import 'jekyll-theme-cayman';
 
 .parallax {
+    position: relative;
     background-image: url("../../images/Embracing_Valhalla.gif");
     min-height: 750px;
     min-width: 100%;
@@ -14,13 +15,12 @@
 }
 
 .text-parallax {
-    //background-color: rgba(0,0,0,0.1);
     display: block;
     position: absolute;
     text-align: center;
     min-width: 25%;
     left: 30%;
-    top: 105%;
+    top: 72.5%;
     color: white;
     opacity: 0;
 }
