@@ -170,8 +170,6 @@ a {
 
     @include large {
         min-width: 100%;
-        //max-width: 64rem;
-        //padding: 2rem 6rem;
         margin: 0 auto;
         font-size: 1.1rem;
     }
@@ -210,8 +208,10 @@ a {
     h4,
     h5,
     h6 {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        //margin-top: 2rem;
+        //margin-bottom: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
         font-weight: normal;
         color: $section-headings-color;
     }

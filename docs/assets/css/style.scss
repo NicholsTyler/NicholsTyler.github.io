@@ -14,11 +14,13 @@
 }
 
 .text-parallax {
+    background-color: rgba(0,0,0,0.1);
     display: block;
     position: absolute;
     text-align: center;
-    top: 50%;
-    min-width: 50%;
+    min-width: 25%;
+    left: 30%;
+    top: 990px;
     color: white;
     opacity: 0;
 }
@@ -79,6 +81,7 @@
     width: 100%;
     text-align: center;
     color: white;
+    padding-top: 1em;
 }
 
 pre {
@@ -159,11 +162,11 @@ section.visible {
 }
 
 .fade-out {
-    animation: fadeOut ease 2.5s;
-    -webkit-animation: fadeOut ease 2.5s;
-    -moz-animation: fadeOut ease 2.5s;
-    -o-animation: fadeOut ease 2.5s;
-    -ms-animation: fadeOut ease 2.5s;
+    animation: fadeOut ease 1s;
+    -webkit-animation: fadeOut ease 1s;
+    -moz-animation: fadeOut ease 1s;
+    -o-animation: fadeOut ease 1s;
+    -ms-animation: fadeOut ease 1s;
 }
 
 @keyframes fadeOut {
