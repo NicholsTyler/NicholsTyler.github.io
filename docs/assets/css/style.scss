@@ -17,12 +17,10 @@
 .text-parallax {
     display: block;
     position: absolute;
-    position: center;
+    text-align: center;
     top: 50%;
-    width: 100%;
+    width: 50%;
     color: white;
-    padding-left: 10em;
-    padding-right: 15em;
     opacity: 0;
 }
 
