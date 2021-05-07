@@ -5,9 +5,8 @@
 
 .parallax {
     background-image: url("../../images/Embracing_Valhalla.gif");
-    //filter: blur(8px);
-    //-webkit-filter: blur(4px);
     min-height: 750px;
+    min-width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,16 +18,9 @@
     position: absolute;
     text-align: center;
     top: 50%;
-    width: 50%;
+    min-width: 50%;
     color: white;
     opacity: 0;
-}
-
-.image-parallax {
-    display: block;
-    position: absolute;
-    top: 77.25%;
-    padding-left: 49em;
 }
 
 .topnav {
