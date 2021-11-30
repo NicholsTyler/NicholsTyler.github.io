@@ -14,9 +14,9 @@
   
 <body>
 	<div class="topnav">
-		<a href='/'						{% if current[1] == null       %} class='active' {% endif %}>Home</a>
-		<a href='/about/background'		{% if current[1] == 'about'    %} class='active' {% endif %}>About</a>
-		<a href='/projects/'			{% if current[1] == 'projects' %} class='active' {% endif %}>Projects</a>
+		<a href='/'						{% if current[1] == null		%} class='active' {% endif %}>Home</a>
+		<a href='/about/background'		{% if current[1] == 'about'		%} class='active' {% endif %}>About</a>
+		<a href='/projects/'			{% if current[1] == 'projects'	%} class='active' {% endif %}>Projects</a>
 		<div class="icons">
 			<a href="https://github.com/NicholsTyler"><img src="../images/GitHub.png" class="icon-style" alt="GitHub icon"></a>
 			<a href="https://www.linkedin.com/in/tyler-a-nichols/"><img src="../images/LinkedIn.png" class="icon-style" alt="LinkedIn icon"></a>
@@ -24,15 +24,6 @@
 			<a href="mailto:Nichols.TA@Outlook.com"><img src="../images/Email.png" class="icon-style" alt="Email icon"></a>
 		</div>
 	</div>
-
-	<header class="page-header" role="banner">
-		<h1 class="project-name" style="margin-top: 6vh">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-		<h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-		{% if page.url == "/" %}
-			<a href="{{ site.github.repository_url }}" class="btn" style="margin-bottom: 6vh">View on GitHub</a>
-			<p style="position: absolute; top: 10vh; left: 80%;"><img src="images/Portrait.png" alt="Portrait of me" width="250" height="333"></p>
-		{% endif %}
-	</header>
 
 	<main id="content" class="main-content" role="main">
 		{{ content }}

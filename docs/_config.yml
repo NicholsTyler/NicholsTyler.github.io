@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tyler Nichols' Portfolio
+title: Tyler's Portfolio
 description:
-  <pre>          Game Design          Game Development          C#          C++          Python          HTML          </pre>
+  <pre>          Game Design          Game Development          C#          C++          Python          HTML          CSS          </pre>
 
 # Build settings
 theme: jekyll-theme-cayman
