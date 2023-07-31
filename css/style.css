@@ -302,6 +302,7 @@ span {
 }
 
 .heading {
+    position: absolute;
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
